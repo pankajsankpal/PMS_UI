@@ -4,25 +4,24 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Student | HOME</title>
+<title>Faculty | HOME</title>
 
 <!-- page specific plugin styles -->
-
-		<!-- page specific plugin styles -->
 		<link rel="stylesheet" href="assets/css/jquery-ui.custom.min.css" />
 		<link rel="stylesheet" href="assets/css/jquery.gritter.min.css" />
 		<link rel="stylesheet" href="assets/css/select2.min.css" />
 		<link rel="stylesheet" href="assets/css/datepicker.min.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap-editable.min.css" />
-<!-- page specific plugin styles -->
-		<link rel="stylesheet" href="assets/css/dropzone.min.css" />
-		<!-- page specific plugin styles -->
+		<link rel="stylesheet" href="assets/css/bootstrap-multiselect.min.css" />
+		<link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+
+
+		<!-- page specific plugin for calander styles -->
 		<link rel="stylesheet" href="assets/css/jquery-ui.custom.min.css" />
 		<link rel="stylesheet" href="assets/css/fullcalendar.min.css" />
-		
+
 </head>
 <body>
-
 <jsp:directive.include file="Header.jsp" />
 
 <div class="main-content">
@@ -32,11 +31,22 @@
 							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
 						</script>
 
-						
+						<ul class="breadcrumb">
+							<li>
+								<i class="ace-icon fa fa-home home-icon"></i>
+								<a href="#">Home</a>
+							</li>
+
+							<li>
+								<a href="#">More Pages</a>
+							</li>
+							<li class="active">User Profile</li>
+						</ul><!-- /.breadcrumb -->
+
 						<div class="nav-search" id="nav-search">
 							<form class="form-search">
 								<span class="input-icon">
-									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="on" />
 									<i class="ace-icon fa fa-search nav-search-icon"></i>
 								</span>
 							</form>
@@ -45,6 +55,7 @@
 
 					<div class="page-content">
 						
+
 						<div class="page-header">
 							<h1>
 								User Profile Page
@@ -89,16 +100,15 @@
 												</label>
 											</div>
 										</div>
-									</div> -->
+									</div>
 								</div>
 
-								<!-- <div class="hr dotted"></div> -->
+								<div class="hr dotted"></div> -->
 
 							<div class="show">
 									<div id="user-profile-2" class="user-profile">
 										<div class="tabbable">
 											<ul class="nav nav-tabs padding-18">
-												<ul class="nav nav-tabs padding-18">
 												<li class="active">
 													<a data-toggle="tab" href="#profile">
 														<i class="green ace-icon fa fa-user bigger-120"></i>
@@ -106,22 +116,21 @@
 													</a>
 												</li>
 
+												
+
 												<li>
 													<a data-toggle="tab" href="#uploads">
-														<i class="orange ace-icon fa fa-upload bigger-120"></i>
+														<i class="blue ace-icon fa fa-users bigger-120"></i>
 														Uploads
 													</a>
 												</li>
-
-												
 												<li>
-													<a data-toggle="tab" href="#notificatn">
-														<i class="pink ace-icon fa fa-check bigger-120"></i>
+													<a data-toggle="tab" href="#notification">
+														<i class="red ace-icon fa fa-bell bigger-120"></i>
 														Notification
 													</a>
 												</li>
 
-											</ul>
 											</ul>
 
 											<div class="tab-content no-border padding-24">
@@ -132,14 +141,12 @@
 																<img class="editable img-responsive" alt="Alex's Avatar" id="avatar2" src="assets/avatars/profile-pic.jpg" />
 															</span>
 
-															
 															<div class="space space-4"></div>
 
-															 <label  class="label label-lg label-primary"> 
+															 <label  class="label label-md label-primary"> 
 																
 																<span class="bigger-110">click on profile to edit </span>
 															</label>
-															
 														</div><!-- /.col -->
 
 														<div class="col-xs-12 col-sm-9">
@@ -158,6 +165,14 @@
 
 																	<div class="profile-info-value">
 																		<span>alexdoe</span>
+																	</div>
+																</div>
+																
+																<div class="profile-info-row">
+																	<div class="profile-info-name"> Role </div>
+
+																	<div class="profile-info-value">
+																		<span>Faculty TPC (Room Allocation Incharge)</span>
 																	</div>
 																</div>
 
@@ -232,216 +247,95 @@
 
 													<div class="space-20"></div>
 
-													<div class="row">
-														<div class="col-xs-12 col-sm-6">
-															<div class="widget-box transparent">
-																<div class="widget-header widget-header-small">
-																	<h4 class="widget-title smaller">
-																		<i class="ace-icon fa fa-check-square-o bigger-110"></i>
-																		Little About Me
-																	</h4>
-																</div>
-
-																<div class="widget-body">
-																	<div class="widget-main">
-																		<p>
-																			My job is mostly lorem ipsuming and dolor sit ameting as long as consectetur adipiscing elit.
-																		</p>
-																		<p>
-																			Sometimes quisque commodo massa gets in the way and sed ipsum porttitor facilisis.
-																		</p>
-																		<p>
-																			The best thing about my job is that vestibulum id ligula porta felis euismod and nullam quis risus eget urna mollis ornare.
-																		</p>
-																		<p>
-																			Thanks for visiting my profile.
-																		</p>
-																	</div>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-xs-12 col-sm-6">
-															<div class="widget-box transparent">
-																<div class="widget-header widget-header-small header-color-blue2">
-																	<h4 class="widget-title smaller">
-																		<i class="ace-icon fa fa-lightbulb-o bigger-120"></i>
-																		My Skills
-																	</h4>
-																</div>
-
-																<div class="widget-body">
-																	<div class="widget-main padding-16">
-																		<div class="clearfix">
-																			<div class="grid3 center">
-																				<div class="easy-pie-chart percentage" data-percent="45" data-color="#CA5952">
-																					<span class="percent">45</span>%
-																				</div>
-
-																				<div class="space-2"></div>
-																				Graphic Design
-																			</div>
-
-																			<div class="grid3 center">
-																				<div class="center easy-pie-chart percentage" data-percent="90" data-color="#59A84B">
-																					<span class="percent">90</span>%
-																				</div>
-
-																				<div class="space-2"></div>
-																				HTML5 & CSS3
-																			</div>
-
-																			<div class="grid3 center">
-																				<div class="center easy-pie-chart percentage" data-percent="80" data-color="#9585BF">
-																					<span class="percent">80</span>%
-																				</div>
-
-																				<div class="space-2"></div>
-																				Javascript/jQuery
-																			</div>
-																		</div>
-
-																		<div class="hr hr-16"></div>
-
-																		<div class="profile-skills">
-																			<div class="progress">
-																				<div class="progress-bar" style="width:80%">
-																					<span class="pull-left">HTML5 & CSS3</span>
-																					<span class="pull-right">80%</span>
-																				</div>
-																			</div>
-
-																			<div class="progress">
-																				<div class="progress-bar progress-bar-success" style="width:72%">
-																					<span class="pull-left">Javascript & jQuery</span>
-
-																					<span class="pull-right">72%</span>
-																				</div>
-																			</div>
-
-																			<div class="progress">
-																				<div class="progress-bar progress-bar-purple" style="width:70%">
-																					<span class="pull-left">PHP & MySQL</span>
-
-																					<span class="pull-right">70%</span>
-																				</div>
-																			</div>
-
-																			<div class="progress">
-																				<div class="progress-bar progress-bar-warning" style="width:50%">
-																					<span class="pull-left">Wordpress</span>
-
-																					<span class="pull-right">50%</span>
-																				</div>
-																			</div>
-
-																			<div class="progress">
-																				<div class="progress-bar progress-bar-danger" style="width:38%">
-																					<span class="pull-left">Photoshop</span>
-
-																					<span class="pull-right">38%</span>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
+													
 												</div><!-- /#home -->
 
 												<div id="uploads" class="tab-pane">
-													<div class="profile-feed row">
-														<div class="row">
-															<div class="col-xs-12">
-																<!-- PAGE CONTENT BEGINS -->
-																
-								
-																<div>
-																	<form action="./dummy.html" class="dropzone" id="dropzone">
-																		<div class="fallback">
-																			<input name="file" type="file" multiple="" />
-																		</div>
-																	</form>
-																</div><!-- PAGE CONTENT ENDS -->
-															</div><!-- /.col -->
-														</div><!-- /.row -->
-					
+													<div class="row">
+														<div class="col-xs-12 col-sm-8">
+															<div class="widget-box">
+																<div class="widget-body">
+																 <div class="widget-main">	
+																	
+																		<div class="form-group">
+																			<div>
+																				<label class="col-sm-3 control-label no-padding-left" for="form-field-1"> Job Profile </label>
+																				<div class="col-sm-9">
+																					<input type="text" id="form-field-1" placeholder=" Name of Job Profile" class="col-xs-10 col-sm-8" />
+																				</div><br>
+																				<label for="form-field-11">About Job</label>
+																					<textarea id="form-field-11" placeholder="Add remarks on Selected Job profile" class="autosize-transition form-control"></textarea>
+																				<br>
+																				<label class="control-label col-xs-12 col-sm-3 no-padding-left" for="message">Send to :</label>
+																				<div class="col-xs-12 col-sm-9">
+																					<select id="message" class="multiselect" multiple="">
+																						<option value="cheese">Student</option>
+																						<option value="tomatoes">Student TPC</option>
+																						<option value="mozarella">TPO</option>
+																					</select>
+																				</div>
+																				<br><br><br>
+																				
+																				<div class="form-group">
+																					<div class="col-xs-12">
+																						<input multiple="" type="file" id="id-input-file-3" />
+																					</div>
+																				</div>
+
+																				<br><br><br>
+																				<button class="btn btn-info" type="button">
+																					<i class="ace-icon fa fa-check bigger-110"></i>
+																					SEND
+																				</button>
+
+																				&nbsp; &nbsp; &nbsp;
+																				<button class="btn" type="reset">
+																					<i class="ace-icon fa fa-undo bigger-110"></i>
+																					Reset
+																				</button>
+																				
+																			</div>
+																	   
+																	   </div>
+
+																		
+																		
+																	</div>
+																	
+																</div>
+															</div>
+														</div><!-- /.span -->
 													
-													</div><!-- /.row -->
+														<!-- <div class="col-xs-12 col-sm-4">
+																<br>
+																<a href="#"  class="btn btn-primary btn-md">View Counseling Reports.</a>
+																	<br><br>
+																<a href="#" class="btn btn-warning btn-md">View Offer Letters.</a>
+																	<br><br>
+																	<div class="col-xs-12">
+																		<input type="file" id="id-input-file-2" />
+																	<a href="#"  class="btn btn-info btn-sm">Upload</a>
+																	</div>
+																
+													</div> -->
+													</div>
+
 
 													<div class="space-12"></div>
 
 													</div><!-- /#feed -->
 
-												<div id="notificatn" class="tab-pane">
+											
+
+												<div id="notification" class="tab-pane">
 													
-													<div class="col-xs-10 widget-container-col">
-														<div class="widget-box">
-															<div class="widget-header widget-header-large">
-																<h4 class="widget-title">Job News</h4>
+												<div class="row">
+											
+													</div>
 
-																<div class="widget-toolbar">
-																	<a href="#" data-action="settings">
-																		<i class="ace-icon fa fa-cog"></i>
-																	</a>
-
-																	<a href="#" data-action="reload">
-																		<i class="ace-icon fa fa-refresh"></i>
-																	</a>
-
-																	<a href="#" data-action="collapse">
-																		<i class="ace-icon fa fa-chevron-up"></i>
-																	</a>
-
-																	<a href="#" data-action="close">
-																		<i class="ace-icon fa fa-times"></i>
-																	</a>
-																</div>
-															</div>
-
-															<div class="widget-body">
-																<div class="widget-main">
-																	<p class="alert alert-info">
-																		TCS Mock Interviews..
-																	</p>
-																</div>
-																
-														
-															<div class="widget-toolbox padding-8 clearfix">
-																
-																<button class="btn btn-md btn-success pull-right">
-																	<span class="bigger-110">Register..!</span>
-
-																	<i class="ace-icon fa fa-arrow-right icon-on-right"></i>
-																</button>
-															</div>
-															</div>
-															
-															
-
-														</div>
 												</div>
 												
-													
-															<!-- PAGE CONTENT BEGINS -->
-															<div class="row">
-																<div class="col-sm-9">
-																	<div class="space"></div>
-
-																	<div id="calendar"></div>
-																</div>
-
-															</div>
-
-															<!-- PAGE CONTENT ENDS -->
-														
-
-												</div><!-- /#friends -->
-
-
-							
-											</div><!-- /#pictures -->
+											</div><!-- /#notification -->
 											</div>
 										</div>
 									</div>
@@ -454,16 +348,11 @@
 					</div><!-- /.page-content -->
 				</div>
 			
+
 <jsp:directive.include file="Footer.jsp" />
 
 	
-
-		<!-- page specific plugin scripts -->
-		
-		<script src="assets/js/dropzone.min.js"></script>
-		<!--[if lte IE 8]>
-		  <script src="assets/js/excanvas.min.js"></script>
-		<![endif]-->
+	
 		<script src="assets/js/jquery-ui.custom.min.js"></script>
 		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
 		<script src="assets/js/jquery.gritter.min.js"></script>
@@ -479,46 +368,19 @@
 		<script src="assets/js/bootstrap-editable.min.js"></script>
 		<script src="assets/js/ace-editable.min.js"></script>
 		<script src="assets/js/jquery.maskedinput.min.js"></script>
-				
+		<script src="assets/js/jquery.autosize.min.js"></script>
+		<script src="assets/js/bootstrap-multiselect.min.js"></script>
+		<script src="assets/js/jquery-ui.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+
+		<!-- page specific plugin scripts -->
+		
+		
 		<!-- ace scripts -->
 		<script src="assets/js/ace-elements.min.js"></script>
 		<script src="assets/js/ace.min.js"></script>
 
 		<!-- inline scripts related to this page -->
-		
-<script type="text/javascript">
-			jQuery(function($){
-			
-			try {
-			  Dropzone.autoDiscover = false;
-			  var myDropzone = new Dropzone("#dropzone" , {
-			    paramName: "file", // The name that will be used to transfer the file
-			    maxFilesize: 0.5, // MB
-			
-				addRemoveLinks : true,
-				dictDefaultMessage :
-				'<span class="bigger-150 bolder"><i class="ace-icon fa fa-caret-right red"></i> Drop CV, Resumes , Other required docs for future use :</span> to upload \
-				<span class="smaller-80 grey">(or click)</span> <br /> \
-				<i class="upload-icon ace-icon fa fa-cloud-upload blue fa-3x"></i>'
-			,
-				dictResponseError: 'Error while uploading file!',
-				
-				//change the previewTemplate to use Bootstrap progress bars
-				previewTemplate: "<div class=\"dz-preview dz-file-preview\">\n  <div class=\"dz-details\">\n    <div class=\"dz-filename\"><span data-dz-name></span></div>\n    <div class=\"dz-size\" data-dz-size></div>\n    <img data-dz-thumbnail />\n  </div>\n  <div class=\"progress progress-small progress-striped active\"><div class=\"progress-bar progress-bar-success\" data-dz-uploadprogress></div></div>\n  <div class=\"dz-success-mark\"><span></span></div>\n  <div class=\"dz-error-mark\"><span></span></div>\n  <div class=\"dz-error-message\"></div>\n</div>"
-			  });
-			  
-			   $(document).one('ajaxloadstart.page', function(e) {
-					try {
-						myDropzone.destroy();
-					} catch(e) {}
-			   });
-			
-			} catch(e) {
-			  alert('Dropzone.js does not support older browsers!');
-			}
-			
-			});
-		</script>
 		<script type="text/javascript">
 			jQuery(function($) {
 
@@ -544,10 +406,59 @@
 		});
 		
 	});
+	
+	/*** FOR DRAG AND DROP functionality *********************/
+	$('#id-input-file-3').ace_file_input({
+					style:'well',
+					btn_choose:'Drop Reference material if any or click to choose',
+					btn_change:null,
+					no_icon:'ace-icon fa fa-cloud-upload',
+					droppable:true,
+					thumbnail:'small'//large | fit
+					//,icon_remove:null//set null, to hide remove/reset button
+					/**,before_change:function(files, dropped) {
+						//Check an example below
+						//or examples/file-upload.html
+						return true;
+					}*/
+					/**,before_remove : function() {
+						return true;
+					}*/
+					,
+					preview_error : function(filename, error_code) {
+						//name of the file that failed
+						//error_code values
+						//1 = 'FILE_LOAD_FAILED',
+						//2 = 'IMAGE_LOAD_FAILED',
+						//3 = 'THUMBNAIL_FAILED'
+						//alert(error_code);
+					}
+			
+				}).on('change', function(){
+					//console.log($(this).data('ace_input_files'));
+					//console.log($(this).data('ace_input_method'));
+				});
 
 
+/**  for increasing the size of text area automatically************/
+		$('textarea[class*=autosize]').autosize({append: "\n"});
 
+/*  use for Multiselecting the inputs*/
+		$('.multiselect').multiselect({
+						 enableFiltering: true,
+						 buttonClass: 'btn btn-white btn-primary',
+						 templates: {
+							button: '<button type="button" class="multiselect dropdown-toggle" data-toggle="dropdown"></button>',
+							ul: '<ul class="multiselect-container dropdown-menu"></ul>',
+							filter: '<li class="multiselect-item filter"><div class="input-group"><span class="input-group-addon"><i class="fa fa-search"></i></span><input class="form-control multiselect-search" type="text"></div></li>',
+							filterClearBtn: '<span class="input-group-btn"><button class="btn btn-default btn-white btn-grey multiselect-clear-filter" type="button"><i class="fa fa-times-circle red2"></i></button></span>',
+							li: '<li><a href="javascript:void(0);"><label></label></a></li>',
+							divider: '<li class="multiselect-item divider"></li>',
+							liGroup: '<li class="multiselect-item group"><label class="multiselect-group"></label></li>'
+						 }
+							});
 
+		
 	/* initialize the calendar
 	-----------------------------------------------------------------*/
 
@@ -700,8 +611,67 @@
 })
 		</script>
 	
-	<!--script for changing the profile image -->
+	
+	<!--script for changing the profile image and model for buttons -->
 	<script>
+		
+		$('#id-input-file-1 , #id-input-file-2').ace_file_input({
+					no_file:'Upload Correspondance file ...',
+					btn_choose:'Choose',
+					btn_change:'Change',
+					droppable:false,
+					onchange:null,
+					thumbnail:false //| true | large
+					//whitelist:'gif|png|jpg|jpeg'
+					//blacklist:'exe|php'
+					//onchange:''
+					//
+				});
+
+		
+		//override dialog's title function to allow for HTML titles
+				$.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
+					_title: function(title) {
+						var $title = this.options.title || '&nbsp;'
+						if( ("title_html" in this.options) && this.options.title_html == true )
+							title.html($title);
+						else title.text($title);
+					}
+				}));
+
+				$( "#id-btn-dialog1" ).on('click', function(e) {
+							e.preventDefault();
+					
+							var dialog = $( "#dialog-message" ).removeClass('hide').dialog({
+								modal: true,
+								title: "<div class='widget-header widget-header-large'><h4 class='smaller'><i class='ace-icon fa fa-check'></i> Details of Candidates applied for Placement.</h4></div>",
+								title_html: true,
+								buttons: [ 
+									{
+										text: "Cancel",
+										"class" : "btn btn-minier",
+										click: function() {
+											$( this ).dialog( "close" ); 
+										} 
+									},
+									{
+										text: "OK",
+										"class" : "btn btn-primary btn-minier",
+										click: function() {
+											$( this ).dialog( "close" ); 
+										} 
+									}
+								]
+							});
+					
+							/**
+							dialog.data( "uiDialog" )._title = function(title) {
+								title.html( this.options.title );
+							};
+							**/
+						});
+
+		
 		//another option is using modals
 				$('#avatar2').on('click', function(){
 					var modal = 
@@ -786,33 +756,3 @@
 	</script>
 </body>
 </html>
-
-<%-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<!-- <SCRIPT type="text/javascript">
-    window.history.forward();
-    function noBack() { window.history.forward(); }
-</SCRIPT> -->
-<title>Spring3Example</title>
-</head>
-<body onload="noBack();"
-    onpageshow="if (event.persisted) noBack();" onunload="">
-<h3>Welcome To the STUDENT page !!!!! </h3>
-<h2>Logged in as <core:out value="${loginForm.userName}" /></h2>
-<table>
-	<tr>
-		<td><a href="resumeUpload">Click here to upload Resume</a></td>
-	</tr>
-	<tr>
-		<td><a href="form">Logout</a></td>
-	</tr>
-</table>
-</body>
-</html> --%>

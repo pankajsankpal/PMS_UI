@@ -130,22 +130,22 @@
 												</li>
 
 												<li>
-													<a data-toggle="tab" href="#managejobs">
+													<a data-toggle="tab" href="#activity">
 														<i class="orange ace-icon fa fa-rss bigger-120"></i>
-														Manage jobs for students
+														Activity
 													</a>
 												</li>
 
 												<li>
-													<a data-toggle="tab" href="#placement">
+													<a data-toggle="tab" href="#uploads">
 														<i class="blue ace-icon fa fa-users bigger-120"></i>
-														Placement Details..
+														Uploads
 													</a>
 												</li>
 												<li>
-													<a data-toggle="tab" href="#addtpc">
+													<a data-toggle="tab" href="#notification">
 														<i class="pink ace-icon fa fa-picture-o bigger-120"></i>
-														Add Tpc's
+														Notification
 													</a>
 												</li>
 
@@ -263,7 +263,7 @@
 			
 												</div><!-- /#home -->
 
-												<div id="managejobs" class="tab-pane">
+												<div id="uploads" class="tab-pane">
 													<div class="row">
 														<div class="col-xs-12 col-sm-8">
 															<div class="widget-box">
@@ -340,7 +340,7 @@
 
 													</div><!-- /#feed -->
 
-												<div id="placement" class="tab-pane">
+												<div id="notification" class="tab-pane">
 													
 												
 													
@@ -426,7 +426,7 @@
 
 												</div><!-- /#placements -->
 
-												<div id="addtpc" class="tab-pane">
+												<div id="activity" class="tab-pane">
 													<div class="row">
 														<div class="col-xs-12 col-sm-6 center">
 																<div id="accordion" class="accordion-style1 panel-group">

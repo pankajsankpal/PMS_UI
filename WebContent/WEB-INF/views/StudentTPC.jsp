@@ -84,37 +84,39 @@
 									<div id="user-profile-2" class="user-profile">
 										<div class="tabbable">
 											<ul class="nav nav-tabs padding-18">
+												<ul class="nav nav-tabs padding-18">
 												<li class="active">
-													<a data-toggle="tab" href="#home">
+													<a data-toggle="tab" href="#profile">
 														<i class="green ace-icon fa fa-user bigger-120"></i>
 														Profile
 													</a>
 												</li>
 
 												<li>
+													<a data-toggle="tab" href="#activity">
+														<i class="orange ace-icon fa fa-wrench bigger-120"></i>
+														Activity
+													</a>
+												</li>
+
+												<li>
 													<a data-toggle="tab" href="#uploads">
-														<i class="orange ace-icon fa fa-rss bigger-120"></i>
-														All Uploads
+														<i class="blue ace-icon fa fa-upload bigger-120"></i>
+														Uploads
+													</a>
+												</li>
+												<li>
+													<a data-toggle="tab" href="#notification">
+														<i class="pink ace-icon fa fa-check bigger-120"></i>
+														Notification
 													</a>
 												</li>
 
-												<li>
-													<a data-toggle="tab" href="#updates">
-														<i class="blue ace-icon fa fa-users bigger-120"></i>
-														Job Updates
-													</a>
-												</li>
-
-												<li>
-													<a data-toggle="tab" href="#tpc">
-														<i class="pink ace-icon fa fa-picture-o bigger-120"></i>
-														TpcWork..
-													</a>
-												</li>
+											
 											</ul>
 
 											<div class="tab-content no-border padding-24">
-												<div id="home" class="tab-pane in active">
+												<div id="profile" class="tab-pane in active">
 													<div class="row">
 														<div class="col-xs-12 col-sm-3 center">
 															<span class="profile-picture">
@@ -369,7 +371,7 @@
 
 													</div><!-- /#uploads -->
 
-												<div id="updates" class="tab-pane">
+												<div id="notification" class="tab-pane">
 													
 													<div class="col-xs-10 widget-container-col">
 														<div class="widget-box">
@@ -447,7 +449,7 @@
 
 									</div><!-- /#updates -->
 
-												<div id="tpc" class="tab-pane">
+												<div id="activity" class="tab-pane">
 													<div class="profile-feed row">
 														<button type="button" class="btn btn-md btn-primary" data-toggle="model" dats-target="myModel"><i class="ace-icon fa fa-group-o"></i> Apply on behalf of student..</button>
 													</div>

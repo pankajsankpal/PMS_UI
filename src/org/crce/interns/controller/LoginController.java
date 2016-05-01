@@ -94,7 +94,7 @@ public class LoginController extends HttpServlet{
 		/*	check for proper refernce */
 		else if(role.equals("FacultyTPC"))
 		{
-			model = new ModelAndView("TeacherTPC");
+			model = new ModelAndView("TeacherTpc");
 			HttpSession session=request.getSession();
 			String name =  request.getParameter("userName");
 		    System.out.println("UserName: " + name); // Here it prints the username properly
@@ -104,6 +104,20 @@ public class LoginController extends HttpServlet{
 		    
 		    System.out.println("Logged in as what????: " + name);
 		    System.out.println("page: " + model);
+			return model;
+		}
+		else if(role.equals("Faculty"))
+		{
+			model = new ModelAndView("Faculty");
+			HttpSession session=request.getSession();
+			String name =  request.getParameter("userName");
+		    System.out.println("UserName: " + name); // Here it prints the username properly
+		    
+		    request.getSession(true).setAttribute("userName", name );
+		    request.getSession(true).setAttribute("roleId", "5" );
+		    
+		    System.out.println("Logged in as what????: " + name);
+		    //System.out.println("model in tpo : " + model);
 			return model;
 		}
 		else if(role.equals("TPO"))
@@ -117,7 +131,7 @@ public class LoginController extends HttpServlet{
 		    request.getSession(true).setAttribute("roleId", "5" );
 		    
 		    System.out.println("Logged in as what????: " + name);
-		    System.out.println("model in tpo : " + model);
+		    //System.out.println("model in tpo : " + model);
 			return model;
 		}
 		else if(role.equals("Admin"))

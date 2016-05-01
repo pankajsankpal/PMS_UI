@@ -128,16 +128,22 @@
 												</li>
  -->
 												<li>
-													<a data-toggle="tab" href="#placement">
+													<a data-toggle="tab" href="#activity">
 														<i class="blue ace-icon fa fa-users bigger-120"></i>
-														Placement Details..
+														Activity
 													</a>
 												</li>
 
 												<li>
-													<a data-toggle="tab" href="#manageuser">
+													<a data-toggle="tab" href="#uploads">
 														<i class="pink ace-icon fa fa-picture-o bigger-120"></i>
-														Manage Users
+														Uploads
+													</a>
+												</li>
+												<li>
+													<a data-toggle="tab" href="#notifications">
+														<i class="red ace-icon fa fa-bell  bigger-120"></i>
+														Notifications
 													</a>
 												</li>
 											</ul>
@@ -253,94 +259,7 @@
 													
 												</div><!-- /#home -->
 
-												
-												<div id="placement" class="tab-pane">
-													
-												
-													
-															<!-- PAGE CONTENT BEGINS -->
-															
-															<br>
-															<a href="#" id="id-btn-dialog1" class="btn btn-purple btn-md">View Placement Performance</a>
-															<div id="dialog-message" class="hide">
-																		<p>
-																			<b>CREDIT SUISSE Interviews </b>
-																		</p>
-																		<p> Applied Students : <a href="#">97</a></p>
-																		<p>Shortlisted Candidates : 55</p>
-																		
-																		<div class="hr hr-12 hr-double"></div>
-																	</div><!-- #dialog-message -->
-															
-															<div class="row">
-																<div class="col-sm-9">
-																	<div class="space"></div>
-
-																	<div id="calendar"></div>
-																</div>
-																<div class="col-sm-3">
-																		<div class="widget-box transparent">
-																			<div class="widget-header">
-																				<h4>Draggable events</h4>
-																			</div>
-
-																			<div class="widget-body">
-																				<div class="widget-main no-padding">
-																					<div id="external-events">
-																						<div class="external-event label-grey" data-class="label-grey">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 1
-																						</div>
-
-																						<div class="external-event label-success" data-class="label-success">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 2
-																						</div>
-
-																						<div class="external-event label-danger" data-class="label-danger">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 3
-																						</div>
-
-																						<div class="external-event label-purple" data-class="label-purple">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 4
-																						</div>
-
-																						<div class="external-event label-yellow" data-class="label-yellow">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 5
-																						</div>
-
-																						<div class="external-event label-pink" data-class="label-pink">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 6
-																						</div>
-
-																						<div class="external-event label-info" data-class="label-info">
-																							<i class="ace-icon fa fa-arrows"></i>
-																							My Event 7
-																						</div>
-
-																						<label>
-																							<input type="checkbox" class="ace ace-checkbox" id="drop-remove" />
-																							
-																							<span class="lbl"> Remove after drop</span>
-																						</label>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																</div>
-								
-															</div>
-
-															<!-- PAGE CONTENT ENDS -->
-														
-
-												</div><!-- /#placements -->
-	
-												<div id="manageuser" class="tab-pane">
+												<div id="activity" class="tab-pane">
 													<div class="row">
 														<div class="col-xs-12 col-sm-6 left">
 																<div id="accordion" class="accordion-style1 panel-group">
@@ -441,6 +360,100 @@
 													</div><!-- /#manageusers -->
 											
 										</div>
+									
+												<div id="uploads" class="tab-pane">
+													
+												
+													
+															<!-- PAGE CONTENT BEGINS -->
+															
+															<br>
+															<a href="#" id="id-btn-dialog1" class="btn btn-purple btn-md">View Placement Performance</a>
+															<div id="dialog-message" class="hide">
+																		<p>
+																			<b>CREDIT SUISSE Interviews </b>
+																		</p>
+																		<p> Applied Students : <a href="#">97</a></p>
+																		<p>Shortlisted Candidates : 55</p>
+																		
+																		<div class="hr hr-12 hr-double"></div>
+																	</div><!-- #dialog-message -->
+															
+															<div class="row">
+																<div class="col-sm-9">
+																	<div class="space"></div>
+
+																	<div id="calendar"></div>
+																</div>
+																<div class="col-sm-3">
+																		<div class="widget-box transparent">
+																			<div class="widget-header">
+																				<h4>Draggable events</h4>
+																			</div>
+
+																			<div class="widget-body">
+																				<div class="widget-main no-padding">
+																					<div id="external-events">
+																						<div class="external-event label-grey" data-class="label-grey">
+																							<i class="ace-icon fa fa-arrows"></i>
+																							My Event 1
+																						</div>
+
+																						<div class="external-event label-success" data-class="label-success">
+																							<i class="ace-icon fa fa-arrows"></i>
+																							My Event 2
+																						</div>
+
+																						<div class="external-event label-danger" data-class="label-danger">
+																							<i class="ace-icon fa fa-arrows"></i>
+																							My Event 3
+																						</div>
+
+																						<div class="external-event label-purple" data-class="label-purple">
+																							<i class="ace-icon fa fa-arrows"></i>
+																							My Event 4
+																						</div>
+
+																						<div class="external-event label-yellow" data-class="label-yellow">
+																							<i class="ace-icon fa fa-arrows"></i>
+																							My Event 5
+																						</div>
+
+																						<div class="external-event label-pink" data-class="label-pink">
+																							<i class="ace-icon fa fa-arrows"></i>
+																							My Event 6
+																						</div>
+
+																						<div class="external-event label-info" data-class="label-info">
+																							<i class="ace-icon fa fa-arrows"></i>
+																							My Event 7
+																						</div>
+
+																						<label>
+																							<input type="checkbox" class="ace ace-checkbox" id="drop-remove" />
+																							
+																							<span class="lbl"> Remove after drop</span>
+																						</label>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																</div>
+								
+															</div>
+
+															<!-- PAGE CONTENT ENDS -->
+														
+
+												</div><!-- /#placements -->
+	
+												
+												<div id="notifications" class="tab-pane">
+													<div class="row">
+											
+													</div><!-- /#manageusers -->
+											
+												</div>
 									</div>
 								</div>
 
