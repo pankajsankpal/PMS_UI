@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="UTF-8"%>
+   <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
     <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -35,17 +37,7 @@
 							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
 						</script>
 
-						<ul class="breadcrumb">
-							<li>
-								<i class="ace-icon fa fa-home home-icon"></i>
-								<a href="#">Home</a>
-							</li>
-
-							<li>
-								<a href="#">More Pages</a>
-							</li>
-							<li class="active">User Profile</li>
-						</ul><!-- /.breadcrumb -->
+						
 
 						<div class="nav-search" id="nav-search">
 							<form class="form-search">custom
@@ -166,7 +158,7 @@
 
 														<div class="col-xs-12 col-sm-9">
 															<h4 class="blue">
-																<span class="middle">Alex M. Doe</span>
+																
 
 																<span class="label label-purple arrowed-in-right">
 																	<i class="ace-icon fa fa-circle smaller-80 align-middle"></i>
@@ -179,30 +171,27 @@
 																	<div class="profile-info-name"> Username </div>
 
 																	<div class="profile-info-value">
-																		<span>alexdoe</span>
+																		<span>Ajay<core:out value="${loginForm.userName}" /> </span>
 																	</div>
 																</div>
 
+
+																
+																
 																<div class="profile-info-row">
-																	<div class="profile-info-name"> Location </div>
+																	<div class="profile-info-name"> Current Account Status: </div>
 
 																	<div class="profile-info-value">
-																		<i class="fa fa-map-marker light-orange bigger-110"></i>
-																		<span>Netherlands</span>
-																		<span>Amsterdam</span>
+																		
+																		<span>Active</span>
+																		
 																	</div>
 																</div>
 
-																<div class="profile-info-row">
-																	<div class="profile-info-name"> Age </div>
-
-																	<div class="profile-info-value">
-																		<span>38</span>
-																	</div>
-																</div>
+																
 
 																<div class="profile-info-row">
-																	<div class="profile-info-name"> Joined </div>
+																	<div class="profile-info-name"> Date Joined/Created:  </div>
 
 																	<div class="profile-info-value">
 																		<span>2010/06/20</span>
@@ -210,7 +199,7 @@
 																</div>
 
 																<div class="profile-info-row">
-																	<div class="profile-info-name"> Last Online </div>
+																	<div class="profile-info-name"> Last Login </div>
 
 																	<div class="profile-info-value">
 																		<span>3 hours ago</span>
@@ -220,37 +209,7 @@
 
 															<div class="hr hr-8 dotted"></div>
 
-															<div class="profile-user-info">
-																<div class="profile-info-row">
-																	<div class="profile-info-name"> Website </div>
-
-																	<div class="profile-info-value">
-																		<a href="#" target="_blank">www.alexdoe.com</a>
-																	</div>
-																</div>
-
-																<div class="profile-info-row">
-																	<div class="profile-info-name">
-																		<i class="middle ace-icon fa fa-facebook-square bigger-150 blue"></i>
-																	</div>
-
-																	<div class="profile-info-value">
-																		<a href="#">Find me on Facebook</a>
-																	</div>
-																</div>
-
-																<div class="profile-info-row">
-																	<div class="profile-info-name">
-																	
-																	
-																		<i class="middle ace-icon fa fa-twitter-square bigger-150 light-blue"></i>
-																	</div>
-
-																	<div class="profile-info-value">
-																		<a href="#">Follow me on Twitter</a>
-																	</div>
-																</div>
-															</div>
+															
 														</div><!-- /.col -->
 													</div><!-- /.row -->
 
@@ -261,8 +220,12 @@
 
 												<div id="activity" class="tab-pane">
 													<div class="row">
-														<div class="col-xs-12 col-sm-6 left">
-																<div id="accordion" class="accordion-style1 panel-group">
+														<div class="col-xs-12 col-sm-4 left">
+														
+														 <a href="#" id="id-btn-dialog1" class="btn btn-warning btn-lg btn-block">Click to Add users Via CSV file  </a> <br> <br>
+														  <a href="#" id="id-btn-dialog1" class="btn btn-primary btn-lg btn-block">manually add users </a> <br> <br>
+														  <a href="#" id="id-btn-dialog1" class="btn btn-purple btn-lg btn-block">Remove users </a>
+																<%-- <div id="accordion" class="accordion-style1 panel-group">
 																	<div class="panel panel-inverse active">
 																		<div class="panel-heading">
 																			<h4 class="panel-title">
@@ -292,14 +255,13 @@
 																		</div>
 																	</div>
 																	
-																</div>
+																</div> --%>
 
-														<div>
-													</div>
+														
 												</div>
 													
 													 	<div class="col-sm-6 right">
-																<div class="widget-box">
+															<%-- 	<div class="widget-box">
 																	<div class="widget-header">
 																		<h4 class="widget-title">Custom File Input</h4>
 					
@@ -354,7 +316,7 @@
 																		
 																		</div>
 																	</div>
-																</div>
+																</div> --%>
 														</div>
 											
 													</div><!-- /#manageusers -->
@@ -449,9 +411,54 @@
 	
 												
 												<div id="notifications" class="tab-pane">
-													<div class="row">
-											
-													</div><!-- /#manageusers -->
+														<div class="col-xs-10 widget-container-col">
+														
+															<div class="widget-box">
+															<div class="widget-header widget-header-large">
+																<h4 class="widget-title">Job News</h4>
+
+																<div class="widget-toolbar">
+																	<a href="#" data-action="settings">
+																		<i class="ace-icon fa fa-cog"></i>
+																	</a>
+
+																	<a href="#" data-action="reload">
+																		<i class="ace-icon fa fa-refresh"></i>
+																	</a>
+
+																	<a href="#" data-action="collapse">
+																		<i class="ace-icon fa fa-chevron-up"></i>
+																	</a>
+
+																	<a href="#" data-action="close">
+																		<i class="ace-icon fa fa-times"></i>
+																	</a>
+																</div>
+															</div>
+
+															<div class="widget-body">
+																<div class="widget-main padding-4 scrollable" data-size="200">
+																	
+																	<p class="alert alert-info">
+																		TCS Mock Interviews..
+																	</p>
+																	<p class="alert alert-danger">
+																		TCS Pre-placement talk..
+																	</p>
+																	<p class="alert alert-success">
+																		Jp Morgan CODE FOR GOOD Registration.<t>25th march 2016</t>
+																	</p>
+																	<p class="alert alert-primary">
+																		Aptitude test for all BE student.<t></t>22nd may 2016
+																	</p>
+																
+																
+															</div>
+															
+															</div>
+															
+														</div>
+												</div>
 											
 												</div>
 									</div>
@@ -501,6 +508,25 @@
 		<script src="assets/js/ace.min.js"></script>
 
 		<!-- inline scripts related to this page -->
+			<script type="text/javascript">
+			jQuery(function($) {
+			
+			
+			
+			
+				// scrollables
+				$('.scrollable').each(function () {
+					var $this = $(this);
+					$(this).ace_scroll({
+						size: $this.attr('data-size') || 150,
+						//styleClass: 'scroll-left scroll-margin scroll-thin scroll-dark scroll-light no-track scroll-visible'
+					});
+				});
+				
+			
+			
+			});
+		</script>
 		
 		
 		

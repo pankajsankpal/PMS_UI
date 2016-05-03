@@ -39,7 +39,7 @@
 
 </head>
 <body >
-	<jsp:directive.include file="Header.jsp" />
+	<jsp:directive.include file="IndexHeader.jsp" />
 
 	<div class="main-container" id="main-container">
 		<script type="text/javascript">

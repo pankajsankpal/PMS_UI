@@ -1,18 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>StudentTpc |	HOME</title>
 <!-- page specific plugin styles -->
+
 		<link rel="stylesheet" href="assets/css/jquery-ui.custom.min.css" />
 		<link rel="stylesheet" href="assets/css/jquery.gritter.min.css" />
 		<link rel="stylesheet" href="assets/css/select2.min.css" />
 		<link rel="stylesheet" href="assets/css/datepicker.min.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap-editable.min.css" />
-<!-- page specific plugin styles -->
-		<link rel="stylesheet" href="assets/css/dropzone.min.css" />
+
 		<!-- page specific plugin styles -->
 		<link rel="stylesheet" href="assets/css/jquery-ui.custom.min.css" />
 		<link rel="stylesheet" href="assets/css/fullcalendar.min.css" />
@@ -30,7 +32,7 @@
 							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
 						</script>
 
-						<ul class="breadcrumb">
+						<!-- <ul class="breadcrumb">
 							<li>
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="#">Home</a>
@@ -40,7 +42,7 @@
 								<a href="#">More Pages</a>
 							</li>
 							<li class="active">User Profile</li>
-						</ul><!-- /.breadcrumb -->
+						</ul>/.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
 							<form class="form-search">
@@ -57,7 +59,7 @@
 
 						<div class="page-header">
 							<h1>
-								User Profile Page
+								Profile Page
 								
 							</h1>
 						</div><!-- /.page-header -->
@@ -135,7 +137,7 @@
 
 														<div class="col-xs-12 col-sm-9">
 															<h4 class="blue">
-																<span class="middle">Alex M. Doe</span>
+																
 
 																<span class="label label-purple arrowed-in-right">
 																	<i class="ace-icon fa fa-circle smaller-80 align-middle"></i>
@@ -148,30 +150,24 @@
 																	<div class="profile-info-name"> Username </div>
 
 																	<div class="profile-info-value">
-																		<span>alexdoe</span>
+																		<span><core:out value="${loginForm.userName}" /> </span>
 																	</div>
 																</div>
 
 																<div class="profile-info-row">
-																	<div class="profile-info-name"> Location </div>
+																	<div class="profile-info-name"> Current Account Status: </div>
 
 																	<div class="profile-info-value">
-																		<i class="fa fa-map-marker light-orange bigger-110"></i>
-																		<span>Netherlands</span>
-																		<span>Amsterdam</span>
+																		
+																		<span>Active</span>
+																		
 																	</div>
 																</div>
 
-																<div class="profile-info-row">
-																	<div class="profile-info-name"> Age </div>
-
-																	<div class="profile-info-value">
-																		<span>38</span>
-																	</div>
-																</div>
+																
 
 																<div class="profile-info-row">
-																	<div class="profile-info-name"> Joined </div>
+																	<div class="profile-info-name"> Date Joined/Created:  </div>
 
 																	<div class="profile-info-value">
 																		<span>2010/06/20</span>
@@ -179,7 +175,7 @@
 																</div>
 
 																<div class="profile-info-row">
-																	<div class="profile-info-name"> Last Online </div>
+																	<div class="profile-info-name"> Last Login </div>
 
 																	<div class="profile-info-value">
 																		<span>3 hours ago</span>
@@ -189,156 +185,12 @@
 
 															<div class="hr hr-8 dotted"></div>
 
-															<div class="profile-user-info">
-																<div class="profile-info-row">
-																	<div class="profile-info-name"> Website </div>
-
-																	<div class="profile-info-value">
-																		<a href="#" target="_blank">www.alexdoe.com</a>
-																	</div>
-																</div>
-
-																<div class="profile-info-row">
-																	<div class="profile-info-name">
-																		<i class="middle ace-icon fa fa-facebook-square bigger-150 blue"></i>
-																	</div>
-
-																	<div class="profile-info-value">
-																		<a href="#">Find me on Facebook</a>
-																	</div>
-																</div>
-
-																<div class="profile-info-row">
-																	<div class="profile-info-name">
-																		<i class="middle ace-icon fa fa-twitter-square bigger-150 light-blue"></i>
-																	</div>
-
-																	<div class="profile-info-value">
-																		<a href="#">Follow me on Twitter</a>
-																	</div>
-																</div>
-															</div>
+															
 														</div><!-- /.col -->
 													</div><!-- /.row -->
 
 													<div class="space-20"></div>
 
-													<div class="row">
-														<div class="col-xs-12 col-sm-6">
-															<div class="widget-box transparent">
-																<div class="widget-header widget-header-small">
-																	<h4 class="widget-title smaller">
-																		<i class="ace-icon fa fa-check-square-o bigger-110"></i>
-																		Little About Me
-																	</h4>
-																</div>
-
-																<div class="widget-body">
-																	<div class="widget-main">
-																		<p>
-																			My job is mostly lorem ipsuming and dolor sit ameting as long as consectetur adipiscing elit.
-																		</p>
-																		<p>
-																			Sometimes quisque commodo massa gets in the way and sed ipsum porttitor facilisis.
-																		</p>
-																		<p>
-																			The best thing about my job is that vestibulum id ligula porta felis euismod and nullam quis risus eget urna mollis ornare.
-																		</p>
-																		<p>
-																			Thanks for visiting my profile.
-																		</p>
-																	</div>
-																</div>
-															</div>
-														</div>
-
-														<div class="col-xs-12 col-sm-6">
-															<div class="widget-box transparent">
-																<div class="widget-header widget-header-small header-color-blue2">
-																	<h4 class="widget-title smaller">
-																		<i class="ace-icon fa fa-lightbulb-o bigger-120"></i>
-																		My Skills
-																	</h4>
-																</div>
-
-																<div class="widget-body">
-																	<div class="widget-main padding-16">
-																		<div class="clearfix">
-																			<div class="grid3 center">
-																				<div class="easy-pie-chart percentage" data-percent="45" data-color="#CA5952">
-																					<span class="percent">45</span>%
-																				</div>
-
-																				<div class="space-2"></div>
-																				Graphic Design
-																			</div>
-
-																			<div class="grid3 center">
-																				<div class="center easy-pie-chart percentage" data-percent="90" data-color="#59A84B">
-																					<span class="percent">90</span>%
-																				</div>
-
-																				<div class="space-2"></div>
-																				HTML5 & CSS3
-																			</div>
-
-																			<div class="grid3 center">
-																				<div class="center easy-pie-chart percentage" data-percent="80" data-color="#9585BF">
-																					<span class="percent">80</span>%
-																				</div>
-
-																				<div class="space-2"></div>
-																				Javascript/jQuery
-																			</div>
-																		</div>
-
-																		<div class="hr hr-16"></div>
-
-																		<div class="profile-skills">
-																			<div class="progress">
-																				<div class="progress-bar" style="width:80%">
-																					<span class="pull-left">HTML5 & CSS3</span>
-																					<span class="pull-right">80%</span>
-																				</div>
-																			</div>
-
-																			<div class="progress">
-																				<div class="progress-bar progress-bar-success" style="width:72%">
-																					<span class="pull-left">Javascript & jQuery</span>
-
-																					<span class="pull-right">72%</span>
-																				</div>
-																			</div>
-
-																			<div class="progress">
-																				<div class="progress-bar progress-bar-purple" style="width:70%">
-																					<span class="pull-left">PHP & MySQL</span>
-
-																					<span class="pull-right">70%</span>
-																				</div>
-																			</div>
-
-																			<div class="progress">
-																				<div class="progress-bar progress-bar-warning" style="width:50%">
-																					<span class="pull-left">Wordpress</span>
-
-																					<span class="pull-right">50%</span>
-																				</div>
-																			</div>
-
-																			<div class="progress">
-																				<div class="progress-bar progress-bar-danger" style="width:38%">
-																					<span class="pull-left">Photoshop</span>
-
-																					<span class="pull-right">38%</span>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
 												</div><!-- /#home -->
 
 												<div id="uploads" class="tab-pane">
@@ -398,7 +250,8 @@
 															</div>
 
 															<div class="widget-body">
-																<div class="widget-main">
+																<div class="widget-main padding-4 scrollable" data-size="200">
+																	
 																	<p class="alert alert-info">
 																		TCS Mock Interviews..
 																	</p>
@@ -411,28 +264,21 @@
 																	<p class="alert alert-primary">
 																		Aptitude test for all BE student.<t></t>22nd may 2016
 																	</p>
-																</div>
 																
-																<div class="widget-toolbox padding-8 clearfix">
 																
-																<button class="btn btn-md btn-success pull-right">
-																	<span class="bigger-110">Register..!</span>
-
-																	<i class="ace-icon fa fa-arrow-right icon-on-right"></i>
-																</button>
-															</div>
 															</div>
 															
+															</div>
 															
-
 														</div>
+														
 											</div>
-											
+												<br><br><br>
 												<div class="hr dotted"></div>
 												
-													<div class="row">
+												<!-- 	<div class="row">
 														<div class="col-xs-12">
-															<!-- PAGE CONTENT BEGINS -->
+															PAGE CONTENT BEGINS
 															<div class="row">
 																<div class="col-sm-9">
 																	<div class="space"></div>
@@ -443,9 +289,9 @@
 																
 															</div>
 
-															<!-- PAGE CONTENT ENDS -->
-														</div><!-- /.col -->
-													</div><!-- /.row -->
+															PAGE CONTENT ENDS
+														</div>/.col
+													</div>/.row -->
 
 									</div><!-- /#updates -->
 
@@ -502,36 +348,22 @@
 		<script src="assets/js/ace.min.js"></script>
 
 		<!-- inline scripts related to this page -->
-		<script type="text/javascript">
-			jQuery(function($){
+			<script type="text/javascript">
+			jQuery(function($) {
 			
-			try {
-			  Dropzone.autoDiscover = false;
-			  var myDropzone = new Dropzone("#dropzone" , {
-			    paramName: "file", // The name that will be used to transfer the file
-			    maxFilesize: 0.5, // MB
 			
-				addRemoveLinks : true,
-				dictDefaultMessage :
-				'<span class="bigger-150 bolder"><i class="ace-icon fa fa-caret-right red"></i> Drop CV, Resumes , Other required docs for future use :</span> to upload \
-				<span class="smaller-80 grey">(or click)</span> <br /> \
-				<i class="upload-icon ace-icon fa fa-cloud-upload blue fa-3x"></i>'
-			,
-				dictResponseError: 'Error while uploading file!',
+			
+			
+				// scrollables
+				$('.scrollable').each(function () {
+					var $this = $(this);
+					$(this).ace_scroll({
+						size: $this.attr('data-size') || 150,
+						//styleClass: 'scroll-left scroll-margin scroll-thin scroll-dark scroll-light no-track scroll-visible'
+					});
+				});
 				
-				//change the previewTemplate to use Bootstrap progress bars
-				previewTemplate: "<div class=\"dz-preview dz-file-preview\">\n  <div class=\"dz-details\">\n    <div class=\"dz-filename\"><span data-dz-name></span></div>\n    <div class=\"dz-size\" data-dz-size></div>\n    <img data-dz-thumbnail />\n  </div>\n  <div class=\"progress progress-small progress-striped active\"><div class=\"progress-bar progress-bar-success\" data-dz-uploadprogress></div></div>\n  <div class=\"dz-success-mark\"><span></span></div>\n  <div class=\"dz-error-mark\"><span></span></div>\n  <div class=\"dz-error-message\"></div>\n</div>"
-			  });
-			  
-			   $(document).one('ajaxloadstart.page', function(e) {
-					try {
-						myDropzone.destroy();
-					} catch(e) {}
-			   });
 			
-			} catch(e) {
-			  alert('Dropzone.js does not support older browsers!');
-			}
 			
 			});
 		</script>
