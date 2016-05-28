@@ -38,7 +38,10 @@ public class LoginController extends HttpServlet{
 		return new ModelAndView("index");
 	}
 	
-
+	@RequestMapping("/search")
+	public String Search() {
+		return "search";
+	}
 	@RequestMapping(value="/form" , method = RequestMethod.GET)  
   	public ModelAndView showForm(HttpServletRequest request, HttpServletResponse response) {
 		

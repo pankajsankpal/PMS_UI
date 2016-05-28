@@ -39,6 +39,10 @@
 						class="menu-icon fa fa-list"></i> <span class="menu-text">
 							Admin </span>
 				</a> <b class="arrow"></b></li>
+				<li class=" " ><a href="search"> <i
+						class="menu-icon fa fa-list"></i> <span class="menu-text">
+							Search </span>
+				</a> <b class="arrow"></b></li>
 			</ul>
 			<!--  End of nav list-->
 
